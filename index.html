@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MathFormulas+</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_io/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_io/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_io/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/site.webmanifest" />
+  </head>
+
+  <body>
+    <header>
+      <h1>MathFormulas+</h1>
+      <nav>
+        <ul>
+          <li><a href="#" id="home-link">Home</a></li>
+          <li><a href="#" id="topics-link">Topics</a></li>
+          <li><a href="#" id="vault-link">Formula Vault</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main id="content">
+      <!-- Home Section -->
+      <section id="home" class="active">
+        <h2>Welcome to MathFormulas+</h2>
+        <p>Learn, explore, and master mathematical formulas with ease!</p>
+        <div class="icon">&#8734;</div>
+        <p>Features of this app:</p>
+        <ul>
+          <li>
+            Explore key formulas in Algebra, Geometry, Trigonometry, and
+            Calculus.
+          </li>
+          <li>Save your favorite formulas to your personal vault.</li>
+          <li>Interactive, responsive, and visually engaging design.</li>
+        </ul>
+      </section>
+
+      <!-- Topics Section -->
+      <section id="topics">
+        <h2>Topics</h2>
+        <div class="topics-list">
+          <button onclick="loadContent('algebra')">Algebra</button>
+          <button onclick="loadContent('geometry')">Geometry</button>
+          <button onclick="loadContent('calculus')">Calculus</button>
+          <button onclick="loadContent('trigonometry')">Trigonometry</button>
+        </div>
+        <div id="topic-content" class="topic-content">
+          <p>Select a topic to view its formulas.</p>
+        </div>
+      </section>
+
+      <!-- Formula Vault Section -->
+      <section id="vault">
+        <h2>Your Formula Vault</h2>
+        <ul id="vault-list">
+          <p>No formulas saved yet!</p>
+        </ul>
+        <div id="vault-details">
+          <h3>Formula Details</h3>
+          <p id="formula-details">Click a formula to view details.</p>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>&copy; 2024 MathFormulas+. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

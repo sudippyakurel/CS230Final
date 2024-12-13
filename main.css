@@ -1,0 +1,186 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #4a90e2, #7ed321) no-repeat center center fixed;
+    background-size: cover;
+    color: #333;
+ }
+ 
+ 
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+ }
+ 
+ 
+ header h1 {
+    margin: 0;
+    font-size: 24px;
+ }
+ 
+ 
+ nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 15px;
+ }
+ 
+ 
+ nav ul li {
+    display: inline;
+ }
+ 
+ 
+ nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+ }
+ 
+ 
+ main {
+    padding: 20px;
+    text-align: center;
+ }
+ 
+ 
+ .active {
+    display: block;
+ }
+ 
+ 
+ section {
+    display: none;
+ }
+ 
+ 
+ footer {
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+ }
+ 
+ 
+ /* Topics List */
+ .topics-list {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin: 20px 0;
+ }
+ 
+ 
+ button {
+    padding: 10px 20px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #f7931e;
+    color: #fff;
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out;
+ }
+ 
+ 
+ button:hover {
+    transform: scale(1.1);
+ }
+ 
+ 
+ .icon {
+    font-size: 100px;
+    color: #fff;
+    animation: spin 4s linear infinite;
+ }
+ 
+ 
+ @keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+ }
+ 
+ 
+ @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        margin: 1em;
+    }
+ 
+ 
+    nav ul {
+        margin-top: 1em;
+        flex-direction: column;
+        align-items: center;
+    }
+ 
+ 
+    .topics-list {
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+    }
+ 
+ 
+    .topics-list button {
+        width: 90%;
+        max-width: 300px;
+    }
+ }
+ 
+ 
+ /* Vault Styles */
+ #vault-list li {
+    background: #fff;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    position: relative;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+ }
+ 
+ 
+ #vault-list li span {
+    font-size: 0.9em;
+    color: #888;
+    display: block;
+ }
+ 
+ 
+ #vault-list li button {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background: #ff4c4c;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+ }
+ 
+ 
+ /* Formula Details */
+ #vault-details {
+    margin-top: 20px;
+    padding: 15px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+ }
+ 
